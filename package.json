@@ -1,0 +1,14 @@
+{
+	"name": "Twitch-Webhooks",
+	"version": "1.0.0",
+	"main": "app.js",
+	"scripts": {
+		"start": "node app.js"
+	},
+	"author": "Timothy Cole <tim@timcole.me>",
+	"license": "MIT",
+	"private": false,
+	"dependencies": {
+		"request": "^2.83.0"
+	}
+}
