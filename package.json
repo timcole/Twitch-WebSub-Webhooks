@@ -1,5 +1,5 @@
 {
-	"name": "Twitch-Webhooks",
+	"name": "twitchwebsub",
 	"version": "1.0.0",
 	"main": "app.js",
 	"scripts": {

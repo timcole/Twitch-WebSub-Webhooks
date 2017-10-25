@@ -11,11 +11,18 @@ $ CLIENT_ID=YOUR_TWITCH_CLIENT_ID_HERE node examples/run.js
 ```
 
 ---
+### Install from npm
+
+```sh
+$ npm install twitchwebsub
+```
+
+---
 ### Usage
 Create a new **TwitchWebSub** server object
 
 ```javascript
-var TwitchWebSub = require("../app.js");
+var TwitchWebSub = require("twitchwebsub");
 var WebSub = TwitchWebSub.server(options);
 
 // Listen on port 9001
