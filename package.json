@@ -1,12 +1,26 @@
 {
 	"name": "twitchwebsub",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"main": "app.js",
 	"scripts": {
 		"start": "node app.js"
 	},
 	"author": "Timothy Cole <tim@timcole.me>",
 	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/TimothyCole/Twitch-WebSub-Webhooks/issues"
+	},
+	"homepage": "https://github.com/TimothyCole/Twitch-WebSub-Webhooks#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/TimothyCole/Twitch-WebSub-Webhooks.git"
+	},
+	"keywords": [
+		"twitch",
+		"twitchtv",
+		"websub",
+		"webhooks"
+	],
 	"private": false,
 	"dependencies": {
 		"request": "^2.83.0"
