@@ -159,8 +159,6 @@ TwitchWebSub.prototype._onPOST = function(req, res) {
 	});
 
 	req.on('end', (function () {
-		var feed = querystring.parse(body);
-
 		if (crypto.createHmac('sha256', this._secret).update(body).digest('hex') !== signature) {
 			res.writeHead(202, { 'Content-Type': 'text/plain; charset=utf-8' });
 			return res.end();
@@ -173,7 +171,7 @@ TwitchWebSub.prototype._onPOST = function(req, res) {
 			topic: topic,
 			hub: hub,
 			callback: 'http://' + req.headers.host + req.url,
-			feed,
+			feed: body,
 			headers: req.headers
 		});
 	}).bind(this));
